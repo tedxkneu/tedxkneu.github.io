@@ -6,21 +6,15 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://use.fontawesome.com/20c86e445c.js"></script>
-    <title>TEDxKNEU:Inside Out</title>
+    <title>Контакти | TEDxKNEU:Inside Out</title>
 </head>
 <body>
 
 <style>
-    html, body {
-        height: 100%;
-        width: 100%;
-        margin: 0;
-    }
-
     body {
         font-family: 'Roboto', sans-serif;
         background: url("images/grey_background.png");
-        background-size: cover;
+        background-size: 100%;
     }
 
     .nav {
@@ -175,41 +169,79 @@
         box-sizing: border-box;
     }
 
-    #bigLogoBlock {
-        margin-top: 30px;
-        margin-bottom: 20px;
-        height: 60%;
+    #contactsBlock {
+        display: flex;
+        height: 50%;
+        width: 100%;
+    }
+
+    #contacts {
+        flex: 1 1 50%;
         box-sizing: border-box;
-        padding-right: 50px;
-    }
-
-    #bigLogo {
-        display: block;
-        margin: auto;
-        height: 100%;
-        box-sizing: border-box;
-    }
-
-    @media (orientation: portrait) {
-        #bigLogo {
-            height: auto;
-            width: 100%;
-        }
-
-    }
-
-    #infoBlock p {
-        margin: 5px;
-        font-size: 20px;
-        text-align: center;
-        color: #ffffff;
+        padding: 30px 40px 0 10%;
+        font-weight: bold;
     }
 
     .fa {
         margin: 10px;
         font-size: 20px;
-        color: #ffffff;
+        color: #e62b1e;
     }
+
+    #map-container {
+        flex: 1 1 50%;
+        height: 100%;
+    }
+
+    #map {
+        height: 100%;
+        width: 100%;
+    }
+
+    .licenseStatement {
+        margin-left: 10%;
+    }
+
+    #headsBlock {
+        min-height: 20%;
+        margin-top:15px;
+    }
+
+    .head {
+        width: 9%;
+        float: left;
+        padding: 10px;
+        box-sizing: border-box;
+        height: 100%;
+    }
+
+    .head a {
+        display: block;
+        text-decoration: none;
+        color: #000;
+    }
+
+    .name {
+        visibility: hidden;
+        margin: 5px;
+        text-align: center;
+        font-size: .8rem;
+        height: 1.8rem;
+        vertical-align: bottom;
+    }
+
+    .head:hover .name {
+        visibility: visible;
+    }
+
+    .headImg {
+        display: block;
+        border-radius: 50%;
+        max-height: 100%;
+        max-width: 100%;
+        margin: auto;
+    }
+
 
     .clearfix:after {
         content: " "; /* Older browser do not support empty content */
@@ -227,25 +259,7 @@
         display: none;
     }
 
-    @media (min-width: 768px) {
-        body {
-            height: 100%;
-            background: url("images/Main.png") no-repeat center;
-            background-size: cover;
-        }
-    }
-
     @media (max-width: 767px) {
-
-        html {
-            background: black;
-        }
-
-        body {
-            height: 100%;
-            background: url("images/Mob.png") no-repeat center;
-            background-size: cover;
-        }
 
         .nav {
             display: none;
@@ -258,7 +272,6 @@
         }
 
         .mobile-nav-toggle {
-            margin: 15px;
             background: transparent;
             border: 0;
             box-shadow: none;
@@ -269,7 +282,7 @@
             display: block;
             width: 32px;
             height: 6px;
-            background: #ffffff;
+            background: #000;
             margin-bottom: 6px;
         }
 
@@ -278,7 +291,7 @@
         }
 
         .mobile-logo img {
-            display: none;
+            display: block;
             width: 100%;
         }
 
@@ -286,13 +299,13 @@
             /*text-align: center;*/
             list-style-type: none;
             width: 100%;
-            padding: 0 0 0 15px;
+            padding: 0 0 0 10px;
         }
 
         .mobile-nav-link {
             display: block;
             text-decoration: none;
-            color: white;
+            color: black;
             font-size: 2rem;
             font-weight: 400;
             padding: 5px;
@@ -301,30 +314,48 @@
         #container {
             position: relative;
             padding: 0 0;
-            height: auto;
         }
 
-        #bigLogoBlock {
-            padding: 0;
-            height: auto;
+        #contactsBlock {
+            display: block;
         }
 
-        #bigLogo {
-            float: none;
-            margin: auto;
-            max-width: 70%;
-            max-height: 70%;
-            height:auto;
-        }
-
-        #infoBlock p {
+        #contacts {
             text-align: center;
-            margin: 5px;
         }
+
+        #map-container {
+            height: 300px;
+            width: 80%;
+            margin: auto;
+        }
+
+        #teamMembers {
+            display: block;
+        }
+
+        .teamMember {
+            margin-left: 30px;
+        }
+
+        #headsBlock {
+            width: 80%;
+            margin: auto;
+        }
+
+        .name {
+            visibility: visible;
+        }
+
+        .head {
+            width: 33%;
+        }
+
 
     }
 
 </style>
+
 
 <ul class="nav">
     <li class="nav-item"><a class="nav-link" href="index.html"><span>ГОЛОВНА</span></a></li>
@@ -363,35 +394,145 @@
 </ul>
 
 <div id="container">
-    <div id="bigLogoBlock" class="clearfix">
-        <img src="images/logo2.png" alt="" id="bigLogo">
+    <div id="contactsBlock">
+        <div id="contacts">
+            <p>tedxkneu.contact@gmail.com</p>
+            <p>+38 (050) 24 09 024</p>
+            <p>Артем</p>
+            <p>
+                <a href="https://www.facebook.com/tedxkneu" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://vk.com/tedxkneu" target="_blank"><i class="fa fa-vk"></i></a>
+                <br>
+                <a href="https://www.instagram.com/tedxkneu/" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://medium.com/@tedxkneu" target="_blank"><i class="fa fa-medium"></i></a>
+            </p>
+        </div>
+        <div id="map-container">
+            <div id="map"></div>
+        </div>
     </div>
 
-    <div id="infoBlock">
-        <p>ЦКМ КНЕУ</p>
-        <p>Дегтярівська 49</p>
-        <p>
-            <i class="fa fa-facebook"></i>
-            <i class="fa fa-vk"></i>
-            <i class="fa fa-instagram"></i>
-        </p>
+    <div id="headsBlock" class="clearfix">
+        <div class="head">
+            <a href="https://www.facebook.com/liubov.iaroshenko" target="_blank">
+                <p class="name">Любов Ярошенко</p>
+                <img class="headImg" src="images/team/liuba.png">
+            </a>
+        </div>
+        <div class="head">
+            <a href="https://www.facebook.com/rak.bogdan.leo" target="_blank">
+                <p class="name">Богдан Рак</p>
+                <img class="headImg" src="images/team/bogdan.png">
+            </a>
+        </div>
+        <div class="head">
+            <a href="https://www.facebook.com/nastia.ksondzyk" target="_blank">
+                <p class="name">Анастасія Ксьондзик</p>
+                <img class="headImg" src="images/team/nastia.png">
+            </a>
+        </div>
+        <div class="head">
+            <a href="https://www.facebook.com/ria.enko" target="_blank">
+                <p class="name">Марія Клименко</p>
+                <img class="headImg" src="images/team/maria.png">
+            </a>
+        </div>
+
+        <div class="head">
+            <a href="https://www.facebook.com/Yelizaveta.I" target="_blank">
+                <p class="name">Єлізавета Ілюсенко</p>
+                <img class="headImg" src="images/team/liza.png">
+            </a>
+        </div>
+        <div class="head">
+            <a href="https://www.facebook.com/profile.php?id=100008059579211" target="_blank">
+                <p class="name">Артем Садурський</p>
+                <img class="headImg" src="images/team/artem.png">
+            </a>
+        </div>
+        <div class="head">
+            <a href="https://www.facebook.com/profile.php?id=100004938556207" target="_blank">
+                <p class="name">Анастасія Старченко</p>
+                <img class="headImg" src="images/team/star.png">
+            </a>
+        </div>
+        <div class="head">
+            <a href="https://www.facebook.com/yurkomashtalir" target="_blank">
+                <p class="name">Юрій Машталір</p>
+                <img class="headImg" src="images/team/yurko.png">
+            </a>
+        </div>
+        <div class="head">
+            <a href="https://www.facebook.com/mishelcheshko" target="_blank">
+                <p class="name">Мішель Чешко</p>
+                <img class="headImg" src="images/team/mishel.png">
+            </a>
+        </div>
+        <div class="head">
+            <a href="https://www.facebook.com/eugenia.viter" target="_blank">
+                <p class="name">Євгенія Вітер</p>
+                <img class="headImg" src="images/team/zhenia.png">
+            </a>
+        </div>
+        <div class="head">
+            <a href="https://www.facebook.com/profile.php?id=100009560614604" target="_blank">
+                <p class="name">Ольга Нижник</p>
+                <img class="headImg" src="images/team/olia.png">
+            </a>
+        </div>
     </div>
+    <p class="licenseStatement">Ця незалежна TEDx подія організовується згідно ліцензії TED</p>
+
+    <!--<div id="teamBlock">-->
+    <!--<div id="teamPicture">-->
+    <!--<img src="http://lorempixel.com/800/200/" alt="" id="teamImg">-->
+    <!--</div>-->
+    <!--<div id="teamMembers">-->
+    <!--<p class="teamMember">Любов Ярошенко</p>-->
+    <!--<p class="teamMember">Богдан Рак</p>-->
+    <!--<p class="teamMember">Анастасія Ксьондзик</p>-->
+    <!--<p class="teamMember">Марія Клименко</p>-->
+    <!--<p class="teamMember">Артем Садурський</p>-->
+    <!--<p class="teamMember">Єлізавета Ілюсенко</p>-->
+    <!--<p class="teamMember">Юрко Машталір</p>-->
+    <!--<p class="teamMember">Мішель Чешко</p>-->
+    <!--<p class="teamMember">Євгенія Вітер</p>-->
+    <!--<p class="teamMember">Ольга Нижник</p>-->
+    <!--<p class="teamMember">Анастасія Старченко</p>-->
+    <!--</div>-->
+    <!--</div>-->
 </div>
 
 <script>
     var navButton = document.getElementsByClassName('mobile-nav-toggle')[0];
     var navigation = document.getElementsByClassName('mobile-nav')[0];
-    var container = document.getElementById('container')
     navButton.onclick = function () {
         if (navigation.style.display == 'none') {
             navigation.style.display = 'block'
-            container.style.display = 'none'
         }
         else {
             navigation.style.display = 'none'
-            container.style.display = 'block'
         }
     };
 </script>
+
+<script>
+    function initMap() {
+        var ourLocation = {lat: 50.460942, lng: 30.432564};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: ourLocation
+        });
+        var marker = new google.maps.Marker({
+            position: ourLocation,
+            map: map
+        });
+    }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMdmRh7R6Jk2L-BJEPrA2RDzoCQTCD_Aw&callback=initMap">
+</script>
+
+
 </body>
 </html>

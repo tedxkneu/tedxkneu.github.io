@@ -4,23 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://use.fontawesome.com/20c86e445c.js"></script>
-    <title>TEDxKNEU:Inside Out</title>
+    <title>TED та TEDx | TEDxKNEU:Inside Out</title>
 </head>
 <body>
 
 <style>
-    html, body {
-        height: 100%;
-        width: 100%;
-        margin: 0;
-    }
-
     body {
         font-family: 'Roboto', sans-serif;
         background: url("images/grey_background.png");
-        background-size: cover;
+        background-size: 100%;
     }
 
     .nav {
@@ -175,40 +167,49 @@
         box-sizing: border-box;
     }
 
-    #bigLogoBlock {
-        margin-top: 30px;
-        margin-bottom: 20px;
-        height: 60%;
-        box-sizing: border-box;
-        padding-right: 50px;
-    }
-
-    #bigLogo {
-        display: block;
-        margin: auto;
+    .content {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
         height: 100%;
-        box-sizing: border-box;
     }
 
-    @media (orientation: portrait) {
-        #bigLogo {
-            height: auto;
-            width: 100%;
-        }
-
+    .ted-wrapper {
+        flex: 1 1 1px;
+        height: 100%;
+        width: 50%;
+        display: flex;
+        align-items: center;
     }
 
-    #infoBlock p {
-        margin: 5px;
-        font-size: 20px;
+    .tedx-wrapper {
+        flex: 1 1 1px;
+        height: 100%;
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+
+    a {
+        color: #000;
+    }
+
+    .ted-block {
+        text-align: justify;
+        padding: 20px;
+        padding-bottom: 150px;
+        font-size: .85rem;
+    }
+
+    .tedx-block {
+        text-align: justify;
+        padding: 20px;
+        padding-top: 100px;
+        font-size: .85rem;
+    }
+
+    .block-header {
         text-align: center;
-        color: #ffffff;
-    }
-
-    .fa {
-        margin: 10px;
-        font-size: 20px;
-        color: #ffffff;
     }
 
     .clearfix:after {
@@ -227,25 +228,7 @@
         display: none;
     }
 
-    @media (min-width: 768px) {
-        body {
-            height: 100%;
-            background: url("images/Main.png") no-repeat center;
-            background-size: cover;
-        }
-    }
-
     @media (max-width: 767px) {
-
-        html {
-            background: black;
-        }
-
-        body {
-            height: 100%;
-            background: url("images/Mob.png") no-repeat center;
-            background-size: cover;
-        }
 
         .nav {
             display: none;
@@ -258,7 +241,6 @@
         }
 
         .mobile-nav-toggle {
-            margin: 15px;
             background: transparent;
             border: 0;
             box-shadow: none;
@@ -269,7 +251,7 @@
             display: block;
             width: 32px;
             height: 6px;
-            background: #ffffff;
+            background: #000;
             margin-bottom: 6px;
         }
 
@@ -278,7 +260,7 @@
         }
 
         .mobile-logo img {
-            display: none;
+            display: block;
             width: 100%;
         }
 
@@ -286,13 +268,13 @@
             /*text-align: center;*/
             list-style-type: none;
             width: 100%;
-            padding: 0 0 0 15px;
+            padding: 0 0 0 10px;
         }
 
         .mobile-nav-link {
             display: block;
             text-decoration: none;
-            color: white;
+            color: black;
             font-size: 2rem;
             font-weight: 400;
             padding: 5px;
@@ -301,25 +283,31 @@
         #container {
             position: relative;
             padding: 0 0;
+        }
+
+        .content {
+            display: block;
+        }
+
+        .ted-wrapper {
+            align-items: unset;
+            width: 100%;
+            height: auto;
+            padding: auto;
+        }
+
+        .tedx-wrapper {
+            align-items: unset;
+            width: 100%;
             height: auto;
         }
 
-        #bigLogoBlock {
-            padding: 0;
-            height: auto;
+        .ted-block {
+            padding: 20px;
         }
 
-        #bigLogo {
-            float: none;
-            margin: auto;
-            max-width: 70%;
-            max-height: 70%;
-            height:auto;
-        }
-
-        #infoBlock p {
-            text-align: center;
-            margin: 5px;
+        .tedx-block {
+            padding: 20px;
         }
 
     }
@@ -363,33 +351,54 @@
 </ul>
 
 <div id="container">
-    <div id="bigLogoBlock" class="clearfix">
-        <img src="images/logo2.png" alt="" id="bigLogo">
-    </div>
+    <div class="content">
+        <div class="ted-wrapper">
+            <div class="ted-block">
+                <h3 class="block-header">TEDxKNEU 2017</h3>
+                <p class="block-content">
+                <p>Тема події TEDxKNEU 2017 - Inside Out.</p>
+                <p>Усі жадають чогось кращого, але звідки ж беруться справжні зміни, звершення і втілені мрії? Ми
+                    переконані, що із середини. Обмінюючись відкриттями та досвідом, невдачами та перемогами, які
+                    заховані всередині нас, ми переосмислюємо свою картину світу, а також знаходимо свою спільноту, яка
+                    окреслює нові горизонти для нашого розвитку.</p>
+                <p>Inside Out - це час переосмислювати і втілювати, тому що фундаментальні зміни в кожному з нас
+                    відбуваються зсередини-назовні.</p>
+                </span>
+                </p>
+            </div>
+        </div>
+        <div class="tedx-wrapper">
+            <div class="tedx-block">
+                <h3 class="block-header">TED та TEDx</h3>
 
-    <div id="infoBlock">
-        <p>ЦКМ КНЕУ</p>
-        <p>Дегтярівська 49</p>
-        <p>
-            <i class="fa fa-facebook"></i>
-            <i class="fa fa-vk"></i>
-            <i class="fa fa-instagram"></i>
-        </p>
+                <p>TED є некомерційною організацією, що займається ідеями вартими поширення.<br>Перша така
+                    конференція тривала чотири дні в Каліфорнії 30 років тому. Відтоді TED спільнота росла,
+                    щоб підтримати свою місію з безліччю ініціатив.<br>Дві щорічні конференції TED запрошують провідних
+                    світових мислителів і практиків виступити протягом
+                    18 хвилин або менше. Багато з цих виступів потім доступні безкоштовно на TED.com.</p>
+
+                <p>В дусі ідей, що варто поширювати, TEDx це програма локальних незалежно організованих подій, які
+                    об'єднують людей разом, щоб поділитися досвідом у стилі TED. <br>Конференції TED забезпечує загальне
+                    керівництво за програмою TEDx, але окремі події TEDx є незалежно організованими. (При дотриманні
+                    певних норм і правил.)</p>
+
+                <p>Більше можна дізнатись на <a href="//ted.com">TED.com</a>, у <a href="//twitter.com/TEDTalks">Twitter</a> або у
+                    <a href="//www.facebook.com/TED">Facebook</a>
+                </p>
+            </div>
+        </div>
     </div>
 </div>
 
 <script>
     var navButton = document.getElementsByClassName('mobile-nav-toggle')[0];
     var navigation = document.getElementsByClassName('mobile-nav')[0];
-    var container = document.getElementById('container')
     navButton.onclick = function () {
         if (navigation.style.display == 'none') {
             navigation.style.display = 'block'
-            container.style.display = 'none'
         }
         else {
             navigation.style.display = 'none'
-            container.style.display = 'block'
         }
     };
 </script>

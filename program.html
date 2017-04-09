@@ -4,23 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://use.fontawesome.com/20c86e445c.js"></script>
-    <title>TEDxKNEU:Inside Out</title>
+    <title>Програма | TEDxKNEU:Inside Out</title>
 </head>
 <body>
 
 <style>
-    html, body {
-        height: 100%;
-        width: 100%;
-        margin: 0;
-    }
-
     body {
         font-family: 'Roboto', sans-serif;
         background: url("images/grey_background.png");
-        background-size: cover;
+        background-size: 100%;
     }
 
     .nav {
@@ -175,40 +167,59 @@
         box-sizing: border-box;
     }
 
-    #bigLogoBlock {
-        margin-top: 30px;
-        margin-bottom: 20px;
-        height: 60%;
-        box-sizing: border-box;
-        padding-right: 50px;
-    }
-
-    #bigLogo {
-        display: block;
-        margin: auto;
+    .wrapper {
         height: 100%;
-        box-sizing: border-box;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
     }
 
-    @media (orientation: portrait) {
-        #bigLogo {
-            height: auto;
-            width: 100%;
-        }
-
+    .program-block {
+        flex: 1 1 1px;
+        margin: auto;
     }
 
-    #infoBlock p {
-        margin: 5px;
-        font-size: 20px;
+    .block-header {
+        color: #e62b1e;
         text-align: center;
-        color: #ffffff;
     }
 
-    .fa {
-        margin: 10px;
-        font-size: 20px;
-        color: #ffffff;
+    .block-content {
+        height: 200px;
+    }
+
+    .left-column {
+        float: left;
+        height: 180px;
+        margin-top: 6px;
+    }
+
+    .program-list {
+        list-style-type: none;
+        float: left;
+        padding-left: 5px;
+        margin: auto;
+    }
+
+    .program-list .program-point:nth-of-type(2) {
+        padding-top: 65px;
+    }
+
+    .program-list .program-point:nth-of-type(3) {
+        padding-top: 27px;
+    }
+
+    .program-list .program-point:nth-of-type(4) {
+        padding-top: 23px;
+    }
+
+    .time {
+        color: #e62b1e;
+    }
+
+    #starComment {
+        margin-top: -45px;
+        margin-left: 10%;
     }
 
     .clearfix:after {
@@ -227,25 +238,7 @@
         display: none;
     }
 
-    @media (min-width: 768px) {
-        body {
-            height: 100%;
-            background: url("images/Main.png") no-repeat center;
-            background-size: cover;
-        }
-    }
-
     @media (max-width: 767px) {
-
-        html {
-            background: black;
-        }
-
-        body {
-            height: 100%;
-            background: url("images/Mob.png") no-repeat center;
-            background-size: cover;
-        }
 
         .nav {
             display: none;
@@ -258,7 +251,6 @@
         }
 
         .mobile-nav-toggle {
-            margin: 15px;
             background: transparent;
             border: 0;
             box-shadow: none;
@@ -269,7 +261,7 @@
             display: block;
             width: 32px;
             height: 6px;
-            background: #ffffff;
+            background: #000;
             margin-bottom: 6px;
         }
 
@@ -278,7 +270,7 @@
         }
 
         .mobile-logo img {
-            display: none;
+            display: block;
             width: 100%;
         }
 
@@ -286,13 +278,13 @@
             /*text-align: center;*/
             list-style-type: none;
             width: 100%;
-            padding: 0 0 0 15px;
+            padding: 0 0 0 10px;
         }
 
         .mobile-nav-link {
             display: block;
             text-decoration: none;
-            color: white;
+            color: black;
             font-size: 2rem;
             font-weight: 400;
             padding: 5px;
@@ -301,27 +293,16 @@
         #container {
             position: relative;
             padding: 0 0;
-            height: auto;
         }
 
-        #bigLogoBlock {
-            padding: 0;
-            height: auto;
+        .wrapper {
+            display: block;
         }
 
-        #bigLogo {
-            float: none;
-            margin: auto;
-            max-width: 70%;
-            max-height: 70%;
-            height:auto;
+        .block-content {
+            width: 300px;
+            margin: 0 auto;
         }
-
-        #infoBlock p {
-            text-align: center;
-            margin: 5px;
-        }
-
     }
 
 </style>
@@ -362,34 +343,58 @@
     <li class="mobile-nav-item"><a class="mobile-nav-link" href="tedandtedx.html"><span>TED ТА TEDX</span></a></li>
 </ul>
 
-<div id="container">
-    <div id="bigLogoBlock" class="clearfix">
-        <img src="images/logo2.png" alt="" id="bigLogo">
-    </div>
 
-    <div id="infoBlock">
-        <p>ЦКМ КНЕУ</p>
-        <p>Дегтярівська 49</p>
-        <p>
-            <i class="fa fa-facebook"></i>
-            <i class="fa fa-vk"></i>
-            <i class="fa fa-instagram"></i>
-        </p>
+<div id="container">
+    <div class="wrapper">
+        <div class="program-block">
+            <h3 class="block-header">Блок 1</h3>
+            <div class="block-content">
+                <img class="left-column" src="images/Line_with_circles.png"/>
+                <ul class="program-list">
+                    <li class="program-point"><span class="time">15:00</span> Реєстрація</li>
+                    <li class="program-point"><span class="time">16:00</span> Спікер</li>
+                    <li class="program-point"><span class="time">16:20</span> Спікер</li>
+                    <li class="program-point"><span class="time">16:45</span> Артист</li>
+                </ul>
+            </div>
+        </div>
+        <div class="program-block">
+            <h3 class="block-header">Блок 2</h3>
+            <div class="block-content">
+                <img class="left-column" src="images/Line_with_circles.png"/>
+                <ul class="program-list">
+                    <li class="program-point"><span class="time">17:20</span> Перерва на каву</li>
+                    <li class="program-point"><span class="time">17:55</span> Спікер</li>
+                    <li class="program-point"><span class="time">18:20</span> Спікер</li>
+                    <li class="program-point"><span class="time">18:40</span> Спікер</li>
+                </ul>
+            </div>
+        </div>
+        <div class="program-block">
+            <h3 class="block-header">Блок 3</h3>
+            <div class="block-content">
+                <img class="left-column" src="images/Line_with_circles.png"/>
+                <ul class="program-list">
+                    <li class="program-point"><span class="time">19:20</span> Перерва на каву</li>
+                    <li class="program-point"><span class="time">19:55</span> Спікер</li>
+                    <li class="program-point"><span class="time">20:20</span> Спікер</li>
+                    <li class="program-point"><span class="time">20:40</span> Артист</li>
+                </ul>
+            </div>
+        </div>
     </div>
+    <p id="starComment">*в програмі можливі зміни</p>
 </div>
 
 <script>
     var navButton = document.getElementsByClassName('mobile-nav-toggle')[0];
     var navigation = document.getElementsByClassName('mobile-nav')[0];
-    var container = document.getElementById('container')
     navButton.onclick = function () {
         if (navigation.style.display == 'none') {
             navigation.style.display = 'block'
-            container.style.display = 'none'
         }
         else {
             navigation.style.display = 'none'
-            container.style.display = 'block'
         }
     };
 </script>
