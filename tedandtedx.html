@@ -316,8 +316,7 @@
 
 <ul class="nav">
     <li class="nav-item"><a class="nav-link" href="index.html"><span>ГОЛОВНА</span></a></li>
-    <li class="nav-item"><a class="nav-link" href="http://tickerry.com/event/tedxkneu/" target="_blank"><span>КУПИТИ КВИТОК</span></a>
-    </li>
+    <li class="nav-item"><a class="nav-link" href="http://tickerry.com/event/tedxkneu/" target="_blank" id="ticketLink"><span>КУПИТИ КВИТОК</span></a></li>
     <li class="nav-item"><a class="nav-link" href="speakers.html"><span>СПІКЕРИ</span></a></li>
     <li class="nav-item"><a class="nav-link" href="program.html"><span>ПРОГРАМА</span></a></li>
     <li class="nav-item"><a class="nav-link" href="contacts.html"><span>КОНТАКТИ</span></a></li>
@@ -341,7 +340,7 @@
 <ul class="mobile-nav">
     <li class="mobile-nav-item"><a class="mobile-nav-link" href="index.html"><span>ГОЛОВНА</span></a></li>
     <li class="mobile-nav-item"><a class="mobile-nav-link" href="http://tickerry.com/event/tedxkneu/"
-                                   target="_blank"><span>КУПИТИ КВИТОК</span></a></li>
+                                   target="_blank" id="ticketLinkMob"><span>КУПИТИ КВИТОК</span></a></li>
     <li class="mobile-nav-item"><a class="mobile-nav-link" href="speakers.html"><span>СПІКЕРИ</span></a></li>
     <li class="mobile-nav-item"><a class="mobile-nav-link" href="program.html"><span>ПРОГРАМА</span></a></li>
     <li class="mobile-nav-item"><a class="mobile-nav-link" href="contacts.html"><span>КОНТАКТИ</span></a></li>
@@ -419,6 +418,12 @@
     ga('create', 'UA-49994126-4', 'auto');
     ga('send', 'pageview');
 
+    function trackTicketLink() {
+        ga('send', 'event', 'outboundClick', 'tickerry');
+    }
+
+    document.getElementById('ticketLink').addEventListener('click',trackTicketLink);
+    document.getElementById('ticketLinkMob').addEventListener('click',trackTicketLink);
 </script>
 </body>
 </html>
