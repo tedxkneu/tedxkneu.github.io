@@ -180,25 +180,30 @@
         height: 70%;
         box-sizing: border-box;
         align-items: center;
+        justify-content: center;
     }
 
     .partner {
         margin: auto;
-        flex: 0 1 33%;
+        flex: 0 1 25%;
         text-align: center;
-        height: 33%;
+        color: #000;
+        text-decoration: none;
+        /*height: 33%;*/
     }
 
     .status {
         visibility: hidden;
         margin: 5px;
         margin-bottom: 15px;
+        font-size: 1.25vw;
+        height: 20%;
     }
 
     .partnerLogo {
         filter: grayscale(100%);
         max-width: 70%;
-        max-height: 70%;
+        max-height: 60%;
     }
 
     .partner:hover .partnerLogo {
@@ -287,6 +292,11 @@
             padding: 0 0;
         }
 
+        #partnersBlock {
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
         .partner {
             flex: 0 1 50%;
             padding: 30px;
@@ -295,6 +305,7 @@
 
         .status {
             visibility: visible;
+            font-size: medium;
         }
 
         .mobile-none {
@@ -351,43 +362,54 @@
         <h2>Ми відкриті до партнерства з Вами. Пишіть нам на tedxkneu@gmail.com</h2>
     </div>
     <div id="partnersBlock">
-        <div class="partner">
+        <a class="partner" href="http://bs.krok.edu.ua/" target="_blank">
             <p class="status">Партнер</p>
             <img src="images/partners/BSK_color.png" alt="" class="partnerLogo">
-        </div>
-        <div class="partner">
-            <p class="status">Медіа партнер</p>
-            <img src="images/partners/Platforma_color.png" alt="" class="partnerLogo">
-        </div>
-        <div class="partner">
+        </a>
+        <a class="partner">
+            <p class="status">Провідний інфопартнер</p>
+            <img src="images/partners/km-color.png" alt="" class="partnerLogo">
+        </a>
+        <a class="partner" href="http://preobrazharium.com/" target="_blank">
             <p class="status">Інформаційний партнер</p>
             <img src="images/partners/preobra_color.png" alt="" class="partnerLogo">
-        </div>
-
-        <div class="partner hidden mobile-none">
-            <p class="status">Генеральний партнер</p>
-            <img src="http://lorempixel.com/300/200/" alt="" class="partnerLogo">
-        </div>
-        <div class="partner">
+        </a>
+        <a class="partner" href="http://www.kse.org.ua" target="_blank">
             <p class="status">Інформаційний партнер</p>
             <img src="images/partners/kyiv_school_economics_color.png" alt="" class="partnerLogo">
-        </div>
-        <div class="partner hidden mobile-none">
-            <p class="status">Генеральний партнер</p>
-            <img src="http://lorempixel.com/300/200/" alt="" class="partnerLogo">
-        </div>
-        <div class="partner hidden mobile-none">
-            <p class="status">Генеральний партнер</p>
-            <img src="http://lorempixel.com/300/200/" alt="" class="partnerLogo">
-        </div>
-        <div class="partner hidden mobile-none">
-            <p class="status">Генеральний партнер</p>
-            <img src="http://lorempixel.com/300/200/" alt="" class="partnerLogo">
-        </div>
-        <div class="partner hidden mobile-none">
-            <p class="status">Генеральний партнер</p>
-            <img src="http://lorempixel.com/300/200/" alt="" class="partnerLogo">
-        </div>
+        </a>
+        <a class="partner" href="http://platfor.ma/" target="_blank">
+            <p class="status">Медіа партнер</p>
+            <img src="images/partners/Platforma_color.png" alt="" class="partnerLogo">
+        </a>
+        <a class="partner" href="http://aristocrats.fm/" target="_blank">
+            <p class="status">Медіа партнер</p>
+            <img src="images/partners/Aristocrats-color.png" alt="" class="partnerLogo">
+        </a>
+        <a class="partner" href="https://ukraine.ureport.in/" target="_blank">
+            <p class="status">Інформаційний партнер</p>
+            <img src="images/partners/Ukraine_Logo_color.png" alt="" class="partnerLogo">
+        </a>
+        <a class="partner" href="http://www.morshinska.ua/" target="_blank">
+            <p class="status">Водний партнер</p>
+            <img src="images/partners/Morshinska_color.png" alt="" class="partnerLogo">
+        </a>
+        <a class="partner" href="http://fri.com.ua/" target="_blank">
+            <p class="status">Інформаційний партнер</p>
+            <img src="images/partners/FRI_color.png" alt="" class="partnerLogo">
+        </a>
+        <a class="partner" href="https://grusha.ua/" target="_blank">
+            <p class="status">Партнер</p>
+            <img src="images/partners/grusha_color.png" alt="" class="partnerLogo">
+        </a>
+        <a class="partner" href="http://razebra.com.ua/" target="_blank">
+            <p class="status">Партнер</p>
+            <img src="images/partners/Zebra_color.png" alt="" class="partnerLogo">
+        </a>
+        <a class="partner" href="https://www.facebook.com/SweetMaryArt/" target="_blank">
+            <p class="status">Партнер</p>
+            <img src="images/partners/sweet_color.jpg" alt="" class="partnerLogo">
+        </a>
     </div>
 </div>
 
